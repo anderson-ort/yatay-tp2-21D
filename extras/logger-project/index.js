@@ -6,22 +6,23 @@ class Logger {
     static logFilePath = 'app.log';
 
     constructor() {
-        this.log = this.createLogger();
+        this.log = this.#createLogger();
     }
 
     static setLogFilePath(filePath) {
         Logger.logFilePath = filePath;
     }
 
-    createLogger() {
+    #createLogger() {
         const logLevels = {
             info: 'INFO',
             warn: 'WARN',
             error: 'ERROR',
         };
 
+
         const logToFile = (level, message) => {
-            const timestamp = new Date().toISOString().replace('T', ' ').slice(0, 19);
+            const timestamp = new Date().toISOString().replace('T', ' ').slice(0, 19); // genera el momento
             const logEntry = `[${timestamp}] [${level}] ${message}\n`;
 
             fs.appendFile(Logger.logFilePath, logEntry, (err) => {
@@ -51,6 +52,12 @@ class Logger {
     }
 }
 
+
+
+
+
+
+
 // Ejemplo de uso:
 const logger = new Logger();
 
@@ -63,3 +70,4 @@ Logger.setLogFilePath('custom.log');
 
 const customLogger = new Logger();
 customLogger.info('Log guardado en custom.log');
+

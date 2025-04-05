@@ -1,0 +1,13 @@
+[
+  {
+    "id": "5e0cfc98-d9c3-4125-ad65-d0b759b86219",
+    "name": "Dulce de Leche Argentino",
+    "ingredients": [
+      "1 litro de leche",
+      "300g de azúcar",
+      "1 cucharadita de bicarbonato de sodio",
+      "1 cucharadita de esencia de vainilla"
+    ],
+    "instructions": "1. En una olla grande, mezcla la leche, el azúcar y el bicarbonato de sodio.\n            2. Cocina a fuego medio, revolviendo constantemente con una cuchara de madera.\n            3. Cuando empiece a espesar y tomar color marrón, baja el fuego.\n            4. Sigue revolviendo hasta obtener una textura cremosa.\n            5. Retira del fuego y añade la esencia de vainilla.\n            6. Deja enfriar y guarda en un frasco hermético"
+  }
+]
