@@ -1,0 +1,13 @@
+### Crear carpeta nueva
+POST http://localhost:3001/api/v1/folders/nueva-carpeta-test
+Content-Type: application/json
+
+### Borrar carpeta
+DELETE http://localhost:3001/api/v1/file/hello-world.txt
+Content-Type: application/json
+
+
+# yes "Esto es una línea de prueba." | head -c 2M > archivo-2mb.txt
+
+curl -X POST http://localhost:3001/api/v1/folders/nueva-carpeta-test/upload \
+  -F "file=@archivo-2mb.txt"
