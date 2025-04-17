@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Imagine",
+        "author": "John Lennon",
+        "band": null,
+        "releaseYear": 1971
+    },
+    {
+        "name": "Smells Like Teen Spirit",
+        "author": "Kurt Cobain, Krist Novoselic, Dave Grohl",
+        "band": "Nirvana",
+        "releaseYear": 1991
+    },
+    {
+        "name": "Bohemian Rhapsody",
+        "author": "Freddie Mercury",
+        "band": "Queen",
+        "releaseYear": 1975
+    },
+    {
+        "name": "Like a Rolling Stone",
+        "author": "Bob Dylan",
+        "band": null,
+        "releaseYear": 1965
+    },
+    {
+        "name": "Billie Jean",
+        "author": "Michael Jackson",
+        "band": null,
+        "releaseYear": 1982
+    },
+    {
+        "name": "Hey Jude",
+        "author": "John Lennon, Paul McCartney",
+        "band": "The Beatles",
+        "releaseYear": 1968
+    },
+    {
+        "name": "Stairway to Heaven",
+        "author": "Jimmy Page, Robert Plant",
+        "band": "Led Zeppelin",
+        "releaseYear": 1971
+    },
+    {
+        "name": "Good Vibrations",
+        "author": "Brian Wilson, Mike Love",
+        "band": "The Beach Boys",
+        "releaseYear": 1966
+    },
+    {
+        "name": "Johnny B. Goode",
+        "author": "Chuck Berry",
+        "band": null,
+        "releaseYear": 1958
+    },
+    {
+        "name": "What's Going On",
+        "author": "Marvin Gaye, Al Cleveland, Renaldo Benson",
+        "band": null,
+        "releaseYear": 1971
+    },
+    {
+        "name": "Dancing Queen",
+        "author": "Benny Andersson, Björn Ulvaeus",
+        "band": "ABBA",
+        "releaseYear": 1976
+    },
+    {
+        "name": "Hotel California",
+        "author": "Don Felder, Glenn Frey, Don Henley",
+        "band": "Eagles",
+        "releaseYear": 1976
+    },
+    {
+        "name": "Sympathy for the Devil",
+        "author": "Mick Jagger, Keith Richards",
+        "band": "The Rolling Stones",
+        "releaseYear": 1968
+    },
+    {
+        "name": "Sweet Child o' Mine",
+        "author": "Axl Rose, Slash, Izzy Stradlin, Duff McKagan, Steven Adler",
+        "band": "Guns N' Roses",
+        "releaseYear": 1987
+    },
+    {
+        "name": "Purple Haze",
+        "author": "Jimi Hendrix",
+        "band": "The Jimi Hendrix Experience",
+        "releaseYear": 1967
+    },
+    {
+        "name": "Hound Dog",
+        "author": "Jerry Leiber and Mike Stoller",
+        "band": null,
+        "releaseYear": 1956
+    },
+    {
+        "name": "Respect",
+        "author": "Otis Redding",
+        "band": null,
+        "releaseYear": 1967
+    },
+    {
+        "name": "Born to Run",
+        "author": "Bruce Springsteen",
+        "band": "E Street Band",
+        "releaseYear": 1975
+    },
+    {
+        "name": "One",
+        "author": "Bono, The Edge, Adam Clayton, Larry Mullen Jr.",
+        "band": "U2",
+        "releaseYear": 1991
+    },
+    {
+        "name": "London Calling",
+        "author": "Joe Strummer, Mick Jones",
+        "band": "The Clash",
+        "releaseYear": 1979
+    }
+]

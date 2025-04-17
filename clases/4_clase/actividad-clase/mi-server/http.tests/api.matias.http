@@ -1,0 +1,11 @@
+# PETICION GET A ENDPOINT /matispizza
+GET http://127.0.0.1:3001/matispizza
+
+### PETICION DEL TIPO POST
+POST http://127.0.0.1:3001/api/calculo
+Content-Type: application/json
+
+{
+    "pizza": "muzza"
+}
+// body siempre se envia por un json

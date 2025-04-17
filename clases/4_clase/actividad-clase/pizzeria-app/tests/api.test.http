@@ -1,0 +1,11 @@
+GET http://127.0.0.1:3002/pizzas
+
+###
+POST http://127.0.0.1:3002/addPedido
+Content-Type: application/json
+
+{   "nombreDePizza":  "Fugazzeta",
+    "cantidad": 10,
+    "usuario": "Anderson Chang",
+    "precioFinal": 3000 
+}
