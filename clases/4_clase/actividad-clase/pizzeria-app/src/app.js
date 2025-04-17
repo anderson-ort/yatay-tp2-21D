@@ -33,15 +33,12 @@ app.post("/addPedido", async (req, res) => {
     const url = path.join(__dirname, "../db/pizzas.list.json")
     const pizzas = await getPedidos(url)
 
-    const pedidoBase = pizzas.map(p => p.nombreDePizza != nombreDePizza)
+    const pedidoBase = pizzas.filter(p => p.nombreDePizza != nombreDePizza)
     const pizza = pizzas.filter(p => p.nombreDePizza === nombreDePizza)
 
-
     pizza[0].pedidos.push(pedido)
-    pedidoBase.push(pizza)
+    pedidoBase.push(pizza[0])
 
-    console.log(pedidoBase);
-    
     await postPedidos(url, pedidoBase)
 
     res.json({ pizza })

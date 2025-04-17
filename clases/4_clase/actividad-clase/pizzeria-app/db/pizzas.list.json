@@ -1,0 +1,189 @@
+[
+  {
+    "nombreDePizza": "Muzzarella",
+    "ingredientes": [
+      "Salsa de tomate",
+      "Queso mozzarella"
+    ],
+    "pedidos": [
+      {
+        "cantidad": 5,
+        "usuario": "Laura Diaz",
+        "precioFinal": 4000
+      },
+      {
+        "cantidad": 2,
+        "usuario": "Pedro Fernandez",
+        "precioFinal": 1600
+      }
+    ]
+  },
+  {
+    "nombreDePizza": "Napolitana",
+    "ingredientes": [
+      "Salsa de tomate",
+      "Queso mozzarella",
+      "Rodajas de tomate",
+      "Ajo",
+      "Orégano"
+    ],
+    "pedidos": [
+      {
+        "cantidad": 1,
+        "usuario": "Sofia Martinez",
+        "precioFinal": 1100
+      },
+      {
+        "cantidad": 4,
+        "usuario": "Diego Rodriguez",
+        "precioFinal": 4400
+      }
+    ]
+  },
+  {
+    "nombreDePizza": "Jamón",
+    "ingredientes": [
+      "Salsa de tomate",
+      "Queso mozzarella",
+      "Jamón cocido"
+    ],
+    "pedidos": [
+      {
+        "cantidad": 3,
+        "usuario": "Ana Garcia",
+        "precioFinal": 3000
+      }
+    ]
+  },
+  {
+    "nombreDePizza": "Huevo",
+    "ingredientes": [
+      "Salsa de tomate",
+      "Queso mozzarella",
+      "Huevo frito"
+    ],
+    "pedidos": [
+      {
+        "cantidad": 2,
+        "usuario": "Martin Suarez",
+        "precioFinal": 2200
+      }
+    ]
+  },
+  {
+    "nombreDePizza": "Calabresa",
+    "ingredientes": [
+      "Salsa de tomate",
+      "Queso mozzarella",
+      "Longaniza calabresa"
+    ],
+    "pedidos": [
+      {
+        "cantidad": 1,
+        "usuario": "Valeria Perez",
+        "precioFinal": 1300
+      },
+      {
+        "cantidad": 2,
+        "usuario": "Javier Gomez",
+        "precioFinal": 2600
+      }
+    ]
+  },
+  {
+    "nombreDePizza": "Roquefort",
+    "ingredientes": [
+      "Salsa de tomate",
+      "Queso mozzarella",
+      "Queso roquefort"
+    ],
+    "pedidos": [
+      {
+        "cantidad": 1,
+        "usuario": "Lucia Lopez",
+        "precioFinal": 1400
+      }
+    ]
+  },
+  {
+    "nombreDePizza": "Palmitos",
+    "ingredientes": [
+      "Salsa de tomate",
+      "Queso mozzarella",
+      "Palmitos"
+    ],
+    "pedidos": [
+      {
+        "cantidad": 3,
+        "usuario": "Nicolas Diaz",
+        "precioFinal": 3300
+      }
+    ]
+  },
+  {
+    "nombreDePizza": "Anchoas",
+    "ingredientes": [
+      "Salsa de tomate",
+      "Queso mozzarella",
+      "Anchoas"
+    ],
+    "pedidos": [
+      {
+        "cantidad": 1,
+        "usuario": "Florencia Fernandez",
+        "precioFinal": 1500
+      }
+    ]
+  },
+  {
+    "nombreDePizza": "Especial",
+    "ingredientes": [
+      "Salsa de tomate",
+      "Queso mozzarella",
+      "Jamón cocido",
+      "Morrones",
+      "Aceitunas"
+    ],
+    "pedidos": [
+      {
+        "cantidad": 2,
+        "usuario": "Mariano Rodriguez",
+        "precioFinal": 2400
+      }
+    ]
+  },
+  {
+    "nombreDePizza": "Fugazzeta",
+    "ingredientes": [
+      "Cebolla",
+      "Queso mozzarella"
+    ],
+    "pedidos": [
+      {
+        "cantidad": 2,
+        "usuario": "Juan Perez",
+        "precioFinal": 1800
+      },
+      {
+        "cantidad": 1,
+        "usuario": "Maria Gomez",
+        "precioFinal": 900
+      },
+      {
+        "cantidad": 3,
+        "usuario": "Carlos Lopez",
+        "precioFinal": 2700
+      },
+      {
+        "cantidad": 10,
+        "usuario": "Anderson Chang",
+        "precioFinal": 3000
+      },
+      {
+        "cantidad": 10,
+        "usuario": "Anderson Chang",
+        "precioFinal": 3000
+      }
+    ]
+  }
+]

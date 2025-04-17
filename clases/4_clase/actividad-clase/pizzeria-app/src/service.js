@@ -23,7 +23,7 @@ const getPedidos = async (path) => {
 const postPedidos = async (path, pedidos) => {
 
     const pedidosString = JSON.stringify(pedidos, null, 2)
-    const pizzas = await writeFile(path, pedidos, { encoding: "utf8" })
+    const pizzas = await writeFile(path, pedidosString, { encoding: "utf8" })
 
 }
 
