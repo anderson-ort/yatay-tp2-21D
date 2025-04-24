@@ -1,0 +1,13 @@
+###
+GET http://127.0.0.1:3001/usuarios
+
+###
+POST http://127.0.0.1:3001/usuario
+Content-Type: application/json
+
+{ 
+    "usuario":{
+    "nombre": "Nicolas Rolon",
+    "email": "nico.emoxito@mail.com"
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "usuario": [
+    {
+      "id": "7c5cf730-4c08-4142-9d83-b78cda37a529",
+      "nombre": "Nicolas Rolon",
+      "email": "nico.emoxito@mail.com",
+      "cuentasBancarias": []
+    }
+  ],
+  "banco": [],
+  "cuentaBancaria": []
+}

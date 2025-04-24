@@ -1,0 +1,31 @@
+{
+  "name": "miestebanquito",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "license": "AGPL-version-3.0",
+  "private": false,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "keywords": [],
+  "contributors": [],
+  "scripts": {
+    "dev": "node --watch ./src/app.js",
+    "linter": "npx @biomejs/biome format --write ./src"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
+  }
+}

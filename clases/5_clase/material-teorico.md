@@ -374,3 +374,4 @@ app.use((err, req, res, next) => {
 ---
 **Bibliografia**
 - [BraveDeveloper](https://bravedeveloper.com/)
+- [Three Tier ARchitecture](https://medium.com/@kasukurthibhargav/understanding-the-three-tier-architecture-in-node-js-a-comprehensive-guide-384c410158a2)
