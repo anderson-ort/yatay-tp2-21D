@@ -24,12 +24,13 @@
   },
   "contributors": [],
   "scripts": {
-    "dev": "",
-    "test": ""
+    "dev": "node --watch src/app.js",
+    "lint": "npx biome lint --write ./src"
   },
   "dependencies": {
+    "basic-auth": "^2.0.1",
     "express": "^5.1.0",
-    "express-basic-auth": "^1.2.1"
+    "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4"

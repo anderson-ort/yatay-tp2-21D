@@ -1,0 +1,26 @@
+
+### Endpoint protegido
+GET http://localhost:3000/productos
+Authorization: Basic admin:admin123
+
+
+
+### Solicita un token con usuario y clave
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "usuario": "Bruce",
+  "clave": "clave-segura"
+}
+
+
+### Ruta protegida con token
+GET http://localhost:3000/pedidos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2wiOiJhY3RvciIsImN1cnNvIjoiTm9kZUpTIEJhY2tlbmQiLCJwcmVmZXJlbmNpYXMiOlsib3NjdXJvIiwiVVRNLTMiXSwiaWF0IjoxNzQ2MDIzMzA1LCJleHAiOjE3NDYwMjMzNjV9.x0PM84cCHfjuM3su08hxMRhZrdfnp3RtcvU3welnrRk
+
+
+
+### Acceso con API Key por header
+GET http://localhost:3000/inventario
+x-api-key: KEY-UNIVERSIDAD-2025

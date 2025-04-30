@@ -1,21 +1,31 @@
+import jwt from "jsonwebtoken"
 
 const SECRET_KEY = process.env.JWT_SECRET || 'claveSuperSecreta';
-const validUser = process.env.JWT_USER || 'docente';
-const validPass = process.env.JWT_PASS || 'claveSegura'
 
+const LOCAL_USER = {
+    name: "Bruce",
+    apellido: "Willis",
+    password: "clave-segura",
+    rol: "actor",
+    curso: "NodeJS Backend",
+    preferencias: ["oscuro", "UTM-3"]
+}
 
-const generateToken = (req, res) => {
+const userToken = (data, key, options) => jwt.sign(data, key, options);
 
+export const generateToken = (req, res) => {
+    
     const { usuario, clave } = req.body;
+    
+    console.log();
 
-    if (usuario === validUser && clave === validPass) {
-        const token = jwt.sign(
-            {
-                rol: 'admin',
-                curso: 'Seguridad en APIs'
-            },
+    const { name: USER, password: PWD } = LOCAL_USER
+
+    if (usuario === USER && clave === PWD) {
+        const token = userToken(
+            { rol: LOCAL_USER.rol, curso: LOCAL_USER.curso, preferencias: LOCAL_USER.preferencias },
             SECRET_KEY,
-            { expiresIn: '1h' }
+            { expiresIn: 1 * 60 }
         );
         return res.json({ token });
     }
@@ -25,7 +35,7 @@ const generateToken = (req, res) => {
 
 
 
-const validateToken = (req, res, next) => {
+export const validateToken = (req, res, next) => {
 
     const authHeader = req.headers.authorization;
 

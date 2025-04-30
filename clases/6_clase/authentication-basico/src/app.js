@@ -1,4 +1,8 @@
 import express from "express"
+import { authMiddleware } from "./auth/basicAuth.js"
+import { generateToken } from "./auth/tokenAuth.js";
+import { validateToken } from "./auth/tokenAuth.js";
+import { apiKeyMiddleware } from "./auth/apiKey.js";
 
 const app = express();
 const PORT = 3000;
@@ -11,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.get('/', (req, res) => {
-    res.send(`
+  res.send(`
     <h1>API de Ejemplo para Clase Node.js</h1>
     <ul>
       <li><strong>Basic Auth:</strong> GET /productos</li>
@@ -27,25 +31,34 @@ app.post('/login', generateToken);
 
 
 app.get('/productos', authMiddleware, (req, res) => {
-    res.json([{ id: 1, nombre: "Laptop Gamer" }, { id: 2, nombre: "Teclado Mecánico" }]);
+  res.json([{ id: 1, nombre: "Laptop Gamer" }, { id: 2, nombre: "Teclado Mecánico" }]);
 });
 
 app.get('/pedidos', validateToken, (req, res) => {
-    res.json({
-        mensaje: 'Acceso autorizado',
-        usuario: req.user, // accedés al payload del token
-        pedidos: [{ id: 1, total: 100 }, { id: 2, total: 200 }]
-    });
+  res.json({
+    mensaje: 'Acceso autorizado',
+    usuario: req.user, // accedés al payload del token
+    payload: [{ id: 1, total: 100 }, { id: 2, total: 200 }]
+  });
 });
+
+app.get('/inventario', apiKeyMiddleware, (req, res) => {
+  res.json([
+    { producto: "Monitor 24\"", stock: 50 },
+    { producto: "Mouse Inalámbrico", stock: 120 }
+  ]);
+});
+
 
 
 
 app.listen(PORT, () => {
-    console.log(`Servidor corriendo en http://${HOST}:${PORT}`);
-    console.log('Endpoints disponibles:');
-    console.log(`- GET /`);
-    console.log(`- GET /productos (Basic Auth)`);
-    console.log(`- POST /login (JWT)`);
-    console.log(`- GET /pedidos (JWT)`);
-    console.log(`- GET /inventario (API Key)`);
+  const msg = `Servidor corriendo en http://${HOST}:${PORT}
+    Endpoints disponibles:
+    - GET /
+    - GET /productos (Basic Auth)
+    - POST /login (JWT)
+    - GET /pedidos (JWT)
+    - GET /inventario (API Key)`
+  console.log(msg)
 });

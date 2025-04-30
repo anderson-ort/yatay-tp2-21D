@@ -242,7 +242,7 @@ La ruta sólo responderá si ambos middlewares se cumplen.
 
 ```bash
 # basic auth 
-npm install express-basic-auth
+npm install basic-auth
 ```
 
 ### Teoría esencial sobre autenticación en APIs

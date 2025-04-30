@@ -3,6 +3,13 @@
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
 	"features": {
 		"ghcr.io/devcontainers-extra/features/node-asdf:0": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"rangav.vscode-thunder-client"
+			]
+		}
 	}
 
 }
