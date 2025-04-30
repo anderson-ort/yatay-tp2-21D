@@ -1,0 +1,31 @@
+version: "3.8"
+
+services: 
+  mongo:
+  image: mongo
+  container_name: mongo
+  restart: always
+  environment:
+    MONGO_INITDB_ROOT_USERNAME: root
+    MONGO_INITDB_ROOT_PASSWORD: example
+
+  mysql-db:
+    container_name: MS_SQL_Server
+    image: mcr.microsoft.com/mssql/server:latest  # Use latest version of MS SQL Server
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "example_123"
+      MSSQL_TLS_ENFORCE: "0"
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./backup:/backup
+    restart: always
+
+    healthcheck:
+      test: [ "CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P example_123 -Q 'SELECT 1' || exit 1" ]
+      interval: 10s
+      retries: 10
+      start_period: 10s
+      timeout: 3s
+ 
