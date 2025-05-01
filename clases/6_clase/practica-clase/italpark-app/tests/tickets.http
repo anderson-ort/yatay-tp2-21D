@@ -1,0 +1,31 @@
+###
+GET http://127.0.0.1:3001/tickets/ticket-valid/20
+
+
+
+###
+POST http://127.0.0.1:3001/tickets/ticket
+Content-Type: application/json
+
+{
+    "ticket":{
+        "userCode": "@brian"
+    }
+}
+
+
+
+###
+DELETE http://127.0.0.1:3001/tickets/ticket/c186d370-51fa-4903-b504-098435d390e8
+
+
+###
+PUT http://127.0.0.1:3001/tickets/update-exp-date
+Content-Type: application/json
+
+{
+    "userCode": "@brian",
+    "semanasPlus":1000
+}
+
+

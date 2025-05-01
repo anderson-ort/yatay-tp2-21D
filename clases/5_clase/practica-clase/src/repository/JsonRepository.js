@@ -5,8 +5,10 @@ export class JsonRepository {
 		this.model = model;
 	}
 
-	async createOne({ id, nombre, email }) {
-		const newUsuario = new this.model(id, nombre, email);
+
+
+	async createOne(...params) {
+		const newUsuario = new this.model(..,params);
 
 		try {
 			const data = await this.getAll();

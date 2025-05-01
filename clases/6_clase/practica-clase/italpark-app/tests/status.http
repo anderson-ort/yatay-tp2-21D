@@ -1,0 +1,5 @@
+###
+GET http://127.0.0.1:3001/api/v01/status
+
+###
+GET http://127.0.0.1:3001/api/v02/status
