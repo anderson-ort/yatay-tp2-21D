@@ -1,7 +1,3 @@
-¡Claro, Andru! Aquí tienes una versión mejor redactada, organizada y más clara del enunciado para tu microparcial:
-
----
-
 # 📚 Microparcial — Desarrollo de Software en Node.js
 
 ## 🎯 Objetivo
@@ -122,11 +118,6 @@ Si lo implementás, debés permitir las siguientes rutas:
 | **Formateador de Código** | Uso de ESLint, Biome o Prettier para mantener código limpio y uniforme                         | 10%    |
 | **Pruebas**               | Documentación con RestClient (archivos `.http`) o Postman (opcional)                           | 10%    |
 
----
-
-## 🧪 Formato de pruebas
-
-Podés incluir un archivo `.http` con ejemplos de peticiones para probar los endpoints. Evitá depender exclusivamente de Postman.
 
 ---
 
