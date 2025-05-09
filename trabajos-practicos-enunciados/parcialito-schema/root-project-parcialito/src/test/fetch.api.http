@@ -1,0 +1,7 @@
+### 2. GET /api/data_externa
+# Este endpoint debe obtener datos desde una URL externa (CSV de cervezas) 
+# y guardarlos en un archivo dentro de /src/db.
+# Se espera un mensaje de confirmación: {"message": "Archivo CSV guardado correctamente"}
+
+GET http://localhost:3003/api/data_externa
+Content-Type: application/json

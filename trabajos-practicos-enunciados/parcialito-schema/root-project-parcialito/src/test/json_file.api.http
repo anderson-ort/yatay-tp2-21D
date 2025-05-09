@@ -1,0 +1,16 @@
+### 1. GET /api/json_file
+# Este endpoint debe retornar todos los libros almacenados en el archivo books.json.
+# Se espera una respuesta en formato JSON con un array de objetos "Book".
+
+# ejemplo de muestra:
+# {
+#     json_file: [  {
+#     "name": "JavaScript",
+#     "paradigms": ["imperative", "functional", "event-driven", "object-oriented"],
+#     "typing": "dynamic",
+#     "year": 1995
+#   },...]
+# }
+
+GET http://localhost:3003/api/json_file
+Content-Type: application/json

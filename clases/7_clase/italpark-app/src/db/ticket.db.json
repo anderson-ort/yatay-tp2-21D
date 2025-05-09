@@ -1,0 +1,26 @@
+[
+	{
+		"id": "7fac150e-711d-453b-86f1-1e3fc5dc51e4",
+		"tipoEntrada": "classic",
+		"userCode": "@brian",
+		"expDate": "1989-03-02T00:00:00.030Z"
+	},
+	{
+		"id": "7fac150e-711w-453b-86f1-1e3fc5dc51e4",
+		"tipoEntrada": "classic",
+		"userCode": "@brian",
+		"expDate": "1989-03-02T00:00:00.030Z"
+	},
+	{
+		"id": "7fac150e-7111-453b-86f1-1e3fc5dc51e4",
+		"tipoEntrada": "vip",
+		"userCode": "@brian",
+		"expDate": "1989-03-02T00:00:00.030Z"
+	},
+	{
+		"id": "51243c3e-0ed6-4433-9c08-2e49543bc41f",
+		"tipoEntrada": "classic",
+		"userCode": "@brian",
+		"expDate": "1970-01-08T00:00:00.007Z"
+	}
+]

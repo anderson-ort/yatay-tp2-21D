@@ -1,0 +1,59 @@
+###
+GET http://127.0.0.1:3001/tickets/ticket-valid/20
+
+###
+GET http://127.0.0.1:3001/tickets/all
+
+###
+GET http://127.0.0.1:3001/tickets/all
+Authorization: Basic admin:7164e33055faa6ecddefd9e08fc59f5d
+
+###
+GET http://127.0.0.1:3001/tickets/all 
+#?api_key=super-secreto-shhhh
+x-api-key: super-secreto-shhhh
+
+
+
+
+###
+POST http://127.0.0.1:3001/tickets/ticket
+Content-Type: application/json
+
+{
+    "ticket":{
+        "userCode": "@brian"
+    }
+}
+
+
+
+###
+DELETE http://127.0.0.1:3001/tickets/ticket/c186d370-51fa-4903-b504-098435d390e8
+
+
+###
+PUT http://127.0.0.1:3001/tickets/update-exp-date
+Content-Type: application/json
+
+{
+    "userCode": "@brian",
+    "semanasPlus":1000
+}
+
+
+
+
+###
+GET http://127.0.0.1:3001/login
+Content-Type: application/json
+
+{
+    "usuario": "Bruce",
+    "pwd": "clave-segura"
+}
+
+
+###
+GET http://127.0.0.1:3001/tickets/all 
+Authorization: Bearer EyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU3VzY3JpYnJlIiwiYXBlbGxpZG8iOiJXaWxsaXMiLCJwYXNzd29yZCI6IioqKioqKioiLCJyb2wiOm51bGwsImN1cnNvIjoiTm9kZUpTIEJhY2tlbmQiLCJwcmVmZXJlbmNpYXMiOiLwn5ClIiwiaWF0IjoxNzQ2NjY3MDM2LCJleHAiOjE3NDY2NjcwOTZ9.vF8hj5rr1awxvNGltOXip8-HTwYTJkZF1nCt9Bv8BUc

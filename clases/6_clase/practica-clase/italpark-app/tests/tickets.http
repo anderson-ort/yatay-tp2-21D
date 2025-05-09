@@ -1,6 +1,17 @@
 ###
 GET http://127.0.0.1:3001/tickets/ticket-valid/20
 
+# response
+# {
+#     status: "OK",
+#     data: {
+#         id : UUID()
+#         tipoEntrada: "VIP" 
+#         userCode: "20"
+#         expDate: NOW()
+#     }
+# }
+
 
 
 ###

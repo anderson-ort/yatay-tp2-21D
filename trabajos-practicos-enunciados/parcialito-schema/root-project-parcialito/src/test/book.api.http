@@ -1,0 +1,50 @@
+
+### 3. POST /api/book
+# Este endpoint debe permitir crear un nuevo libro en el sistema.
+# Se espera una respuesta con el libro creado, incluyendo el ID generado.
+
+POST http://localhost:3003/api/book
+Content-Type: application/json
+
+{
+  "title": "Rayuela",
+  "author": "Julio Cortázar",
+  "isbn": "978-950-07-0000-0",
+  "publishedDate": "1963-06-28",
+  "availableCopies": 5
+}
+
+###
+
+### 4. GET /api/book/b72f94f2-bc09-49e4-85a6-83fd7eaa29c0
+# Este endpoint debe retornar un libro específico por su ID.
+# Se espera un objeto JSON representando el libro correspondiente.
+
+GET http://localhost:3003/api/book/b72f94f2-bc09-49e4-85a6-83fd7eaa29c0
+Content-Type: application/json
+
+###
+
+### 5. PUT /api/book/b72f94f2-bc09-49e4-85a6-83fd7eaa29c0
+# Este endpoint debe actualizar los datos del libro con el ID especificado.
+# Se espera una respuesta con el libro actualizado.
+
+PUT http://localhost:3003/api/book/b72f94f2-bc09-49e4-85a6-83fd7eaa29c0
+Content-Type: application/json
+
+{
+  "title": "Cien años de soledad (Edición actualizada)",
+  "author": "Gabriel García Márquez",
+  "isbn": "978-3-16-148410-0",
+  "publishedDate": "1967-06-05",
+  "availableCopies": 6
+}
+
+###
+
+### 6. DELETE /api/book/b72f94f2-bc09-49e4-85a6-83fd7eaa29c0
+# Este endpoint debe eliminar el libro con el ID especificado.
+# Se espera un mensaje de éxito: {"message": "Libro eliminado correctamente"}
+
+DELETE http://localhost:3003/api/book/b72f94f2-bc09-49e4-85a6-83fd7eaa29c0
+Content-Type: application/json

@@ -52,6 +52,46 @@ Se evaluará especialmente:
 - Puedes conectar tu CRUD a una base de datos (MongoDB, PostgreSQL, SQLite, etc.) si lo deseas.  
   Este aspecto sumará puntos extra en la evaluación.
 
+--- 
+
+# 📃 Rúbrica de Evaluación para Proyectos API
+
+## Criterios de Evaluación
+
+| Criterio | Descripción | Porcentaje |
+|----------|-------------|------------|
+| **Respuesta Correcta** | Los endpoints deben cumplir con los formatos de respuesta esperados | 50% |
+| **Arquitectura Limpia** | Separación adecuada de capas (controller, service, etc.). La lógica de negocio no debe estar en la capa de presentación (controller) | 20% |
+| **Control de Versiones** | Proyecto subido correctamente a GitHub | 10% |
+| **Formateador de Código** | Uso de herramientas de formateo como Prettier (ESLint) o Biome | 10% |
+| **Pruebas** | Implementación de pruebas para los endpoints, ya sea mediante Postman (no recomendado) o archivos HTTP con RestClient | 10% |
+
+## Detalles de Evaluación
+
+### Respuesta Correcta (50%)
+- Los endpoints devuelven los datos esperados en el formato correcto
+- Los códigos de estado HTTP son apropiados
+- Se manejan adecuadamente los errores
+
+### Arquitectura Limpia (20%)
+- Correcta separación de responsabilidades
+- La lógica de negocio está en services, no en controllers
+- Estructura de carpetas organizada según patrón MVC u otro patrón arquitectónico apropiado
+
+### Control de Versiones (10%)
+- Repositorio en GitHub organizado
+- Commits con mensajes descriptivos
+- README con instrucciones claras
+
+### Formateador de Código (10%)
+- Configuración correcta de Prettier, ESLint o Biome
+- Código formateado consistentemente
+- Reglas de formato implementadas en el proyecto
+
+### Pruebas (10%)
+- Documentación de endpoints con ejemplos de solicitud/respuesta
+- Archivos HTTP con RestClient para probar los endpoints
+- Alternativamente, colección de Postman (aunque no es lo recomendado)
 ---
 
 ### ⏱ Tiempo estimado

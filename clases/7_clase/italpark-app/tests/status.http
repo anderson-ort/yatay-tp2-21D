@@ -1,0 +1,22 @@
+###
+GET http://127.0.0.1:3001/api/v01/status
+
+###
+GET http://127.0.0.1:3001/api/v02/status
+
+
+###
+POST http://127.0.0.1:3001/api/v02/create-status
+Content-Type: application/json
+
+
+{
+    "nombre": "Crecencio",
+    "credenciales": 123
+}
+
+
+# --> esto me debe crear un archivo, siempre y cuando la pwd sea la correcta
+
+
+

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "JavaScript",
+    "paradigms": ["imperative", "functional", "event-driven", "object-oriented"],
+    "typing": "dynamic",
+    "year": 1995
+  },
+  {
+    "name": "Python",
+    "paradigms": ["object-oriented", "imperative", "functional", "procedural"],
+    "typing": "dynamic",
+    "year": 1991
+  },
+  {
+    "name": "Java",
+    "paradigms": ["object-oriented", "imperative", "concurrent"],
+    "typing": "static",
+    "year": 1995
+  },
+  {
+    "name": "C",
+    "paradigms": ["imperative", "procedural"],
+    "typing": "static",
+    "year": 1972
+  },
+  {
+    "name": "C++",
+    "paradigms": ["object-oriented", "imperative", "procedural", "generic"],
+    "typing": "static",
+    "year": 1985
+  },
+  {
+    "name": "Go",
+    "paradigms": ["concurrent", "imperative", "object-oriented"],
+    "typing": "static",
+    "year": 2009
+  },
+  {
+    "name": "Rust",
+    "paradigms": ["functional", "imperative", "concurrent"],
+    "typing": "static",
+    "year": 2010
+  },
+  {
+    "name": "TypeScript",
+    "paradigms": ["object-oriented", "functional"],
+    "typing": "static",
+    "year": 2012
+  },
+  {
+    "name": "Ruby",
+    "paradigms": ["object-oriented", "imperative", "functional"],
+    "typing": "dynamic",
+    "year": 1995
+  },
+  {
+    "name": "Kotlin",
+    "paradigms": ["object-oriented", "functional"],
+    "typing": "static",
+    "year": 2011
+  }
+]
