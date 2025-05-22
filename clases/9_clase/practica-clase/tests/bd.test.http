@@ -1,0 +1,14 @@
+### Peticion a la base de datos de SupaBase
+GET http://127.0.0.1:3100/
+
+
+### Enviar y crear un book
+POST http://127.0.0.1:3100/crear-book
+Content-Type: application/json
+
+{
+  "title": "Brave New World",
+  "author": "Aldous Huxley",
+  "published_year": 1932,
+  "genre": "Dystopian"
+}

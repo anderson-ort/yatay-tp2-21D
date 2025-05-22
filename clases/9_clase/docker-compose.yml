@@ -1,0 +1,12 @@
+
+services:
+
+  db:
+    image: mysql:8.0.15
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: admin-1234
+    ports:
+      - 3306:3306
+
+    

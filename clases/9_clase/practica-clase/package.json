@@ -1,0 +1,37 @@
+{
+  "name": "persistencia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "license": "AGPL-version-3.0",
+  "private": false,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "keywords": [],
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "contributors": [],
+  "scripts": {
+    "dev": "node --env-file=./.env --watch src/app.js",
+    "test": ""
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.8",
+    "express": "^5.1.0",
+    "mongodb": "^6.16.0",
+    "mysql": "^2.18.1",
+    "postgres": "^3.4.7"
+  }
+}
