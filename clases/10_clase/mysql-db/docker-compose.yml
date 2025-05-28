@@ -1,0 +1,14 @@
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql-db
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin-1234
+      - MYSQL_USER=backend-user
+      - MYSQL_PASSWORD=backend-user-pass
+      - MYSQL_DATABASE=ort_database
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
