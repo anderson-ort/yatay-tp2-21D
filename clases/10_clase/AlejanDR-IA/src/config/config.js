@@ -2,6 +2,26 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const { MONGO_URI, SERVER_PORT, SERVER_HOST } = process.env;
+const {
+	MONGO_URI,
+	SERVER_PORT,
+	SERVER_HOST,
+	MYSQL_USER,
+	MYSQL_PASSWORD,
+	MYSQL_DATABASE,
+	MYSQL_PORT,
+	MYSQL_HOST,
+	DATABASE
+} = process.env;
 
-export const config = { MONGO_URI, SERVER_PORT, SERVER_HOST };
+export const config = {
+	MONGO_URI,
+	SERVER_PORT,
+	SERVER_HOST,
+	MYSQL_USER,
+	MYSQL_PASSWORD,
+	MYSQL_DATABASE,
+	MYSQL_PORT,
+	MYSQL_HOST,
+	DATABASE
+};

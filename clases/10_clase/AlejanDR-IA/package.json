@@ -2,7 +2,7 @@
   "name": "alejandr-ia",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "src/server.js",
   "type": "module",
   "license": "AGPL-version-3.0",
   "private": false,
@@ -24,13 +24,15 @@
   },
   "contributors": [],
   "scripts": {
-    "dev": "node --watch --env-file=.env src/app.js",
+    "dev": "node --watch --env-file=.env src/server.js",
     "test": "jest --detectOpenHandles",
     "lint": "npx @biomejs/biome check --write src"
   },
   "dependencies": {
     "express": "^5.1.0",
-    "mongoose": "^8.15.1"
+    "mongoose": "^8.15.1",
+    "mysql2": "^3.14.1",
+    "sequelize": "^6.37.7"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.27.2",

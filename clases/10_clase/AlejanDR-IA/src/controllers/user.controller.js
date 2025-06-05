@@ -1,4 +1,5 @@
-import userRepository from "../repositories/mongoose/user.repository.js";
+import { userRepository } from "../repositories";
+
 
 export const UserController = {
 	getAllUsers: async (req, res) => {

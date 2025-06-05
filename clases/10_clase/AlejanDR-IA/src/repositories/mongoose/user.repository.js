@@ -1,9 +1,8 @@
 import { UserModel } from "../../models/mongo/User.js";
 
-class MongoUserRepository {
+export class MongoUserRepository {
 	async getAll() {
 		return await UserModel.find()
-			// .populate("books", "title author rentedAt")
 			.exec();
 	}
 
@@ -29,4 +28,3 @@ class MongoUserRepository {
 	}
 }
 
-export default new MongoUserRepository();
